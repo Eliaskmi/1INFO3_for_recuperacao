@@ -9,13 +9,26 @@
     */
 
     //Entrada
-
+    const sellIphone = Number(prompt(`quantos Iphones foram vendidos na última black-Friday`));
+    let credito = [];
+    let pix = [];
 
     //Processamento
-
+    for (let iphone = 1; iphone <= sellIphone; iphone++){
+        const preco = Number(prompt(`Iphone:${iphone} qual foi o preço deste iphone?`));
+        const pagamento = prompt(`Qual foi a forma de pagamento deste Iphone ${iphone}`)
+        if (pagamento == "C"){
+            credito.push(iphone);
+        }
+        else {
+            pix.push(iphone)
+        }
+        
+    }
 
     //Saída
 
+     document.write(`Cartão de Crédito:${credito} Vendas (R$ )<br> Pix:${pix} Vendas (R$ )`)
     /*
     Exemplo:
     5 pessoas

@@ -6,13 +6,17 @@
     */
 
     //Entrada
-
-
+    const numero = Number(prompt(`informe um numero inteiro e positivo`));
+    let n = [];
     //Processamento
-
+    for (let contador = 1; contador <=numero; contador++){
+        n.push(contador)
+        n.sort((a, b) => b - a);
+        
+    }
 
     //Saída
-    
+    document.write(`${n}<br>`)
 
     /*
     Exemplo: Usuário informou o número 5
